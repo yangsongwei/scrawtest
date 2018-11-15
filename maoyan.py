@@ -1,3 +1,8 @@
+'''
+    func:爬取猫眼排名前一百的电影详细信息
+    date:2018/22/15
+    author:monty
+'''
 import requests
 import re
 import json
