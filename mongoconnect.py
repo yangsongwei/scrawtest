@@ -25,9 +25,16 @@ student = {
 # result=collection.insert_one(student)
 # print(result.inserted_id)
 
-#查询
-result=collection.find({'name':'Jordan'})
-print(result.count())
+# #查询
+# result=collection.find({'name':'Jordan'})
+# print(result.count())
+
+condition={'age':{'$gt':20}}
+
+student['name']='monty'
+
+result=collection.update_one(condition,{'$set':student})
+print(result.modified_count)
 
 
 
